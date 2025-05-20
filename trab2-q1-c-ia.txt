@@ -1,0 +1,53 @@
+Variáveis Independentes (Marginais):
+P(Str) - Condição da rua (ajustado para clima mais úmido):
+
+Str		Probabilidade
+dry		0.5
+wet		0.4
+snow_covered	0.1
+
+P(FIw) - Volante desgastado (desgaste mais realista):
+
+FIw	Probabilidade
+t	0.15
+f	0.85
+
+P(B) - Lâmpada ok (falha menos frequente):
+
+B	Probabilidade
+t	0.98
+f	0.02
+
+P(K) - Cabo ok (mais confiável):
+
+K	Probabilidade
+t	0.95
+f	0.05
+
+Variáveis Dependentes:
+P(R | Str, FIw) - Deslizamento do dínamo (valores revisados):
+
+Str		FIw	P(R = t)	P(R = f)
+dry		t	0.3		0.7
+dry		f	0.1		0.9
+wet		t	0.6		0.4
+wet		f	0.2		0.8
+snow_covered	t	0.8		0.2
+snow_covered	f	0.4		0.6
+P(V | R) - Tensão do dínamo (mais realista):
+
+R	P(V = t)	P(V = f)
+t	0.95		0.05
+f	0.1		0.9
+
+P(Li | V, B, K) - Luz ligada (valores ajustados):
+
+V	B	K	P(Li = t)	P(Li = f)
+t	t	t	0.998		0.002
+t	t	f	0.05		0.95
+t	f	t	0.1		0.9
+t	f	f	0.005		0.995
+f	t	t	0.01		0.99
+f	t	f	0.001		0.999
+f	f	t	0.001		0.999
+f	f	f	0.0		1.0
