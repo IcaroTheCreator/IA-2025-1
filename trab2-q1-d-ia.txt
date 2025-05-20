@@ -1,0 +1,3 @@
+P(Li∣Str,V,B,K) = P(Li∣V,B,K) 
+
+Isso mostra que Str não adiciona informação sobre Li além do que já é fornecido por V, B e K — confirmando que não há dependência direta entre Str e Li.

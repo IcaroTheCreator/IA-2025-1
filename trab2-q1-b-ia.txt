@@ -1,0 +1,9 @@
+V	B	K	P(Li = t)
+t	t	t	0.99
+t	t	f	0.1	
+t	f	t	0.2	
+t	f	f	0.01	
+f	t	t	0.05	
+f	t	f	0.01	
+f	f	t	0.01	
+f	f	f	0.0	
